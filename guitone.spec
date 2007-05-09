@@ -11,6 +11,7 @@ URL:		http://guitone.thomaskeller.biz/
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
 BuildRequires:	qt4-build >= 4.2.0
+BuildRequires:	qt4-linguist
 BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	monotone >= 0.34
@@ -22,12 +23,18 @@ distributed version control system monotone. It aims towards a full
 implementation of the monotone automation interface and is especially
 targeted at beginners.
 
+%description -l pl.UTF-8
+Guitone to oparty na Qt, wieloplatformowy graficzny interfejs
+użytkownika do rozproszonego systemu kontroli wersji monotone. Jego
+celem jest pełna implementacja interfejsu automatyzacji monotona i
+jest przeznaczony zwłaszcza dla początkujących.
+
 %prep
 %setup -q
 
 %build
 qt4-qmake -config release guitone.pro
-lrelease guitone.pro
+%{_libdir}/qt4/bin/lrelease guitone.pro
 
 %{__make}
 
