@@ -2,7 +2,7 @@ Summary:	A GUI frontend for monotone
 Summary(pl.UTF-8):	Graficzny interfejs użytkownika dla monotone
 Name:		guitone
 Version:	0.6.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://guitone.thomaskeller.biz/count.php/from=default/%{version}/%{name}-%{version}.tgz
