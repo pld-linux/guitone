@@ -10,6 +10,8 @@ Source0:	http://guitone.thomaskeller.biz/count.php/from=default/%{version}/%{nam
 URL:		http://guitone.thomaskeller.biz/
 BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtXml-devel
 BuildRequires:	qt4-build >= 4.3.3-3
 BuildRequires:	qt4-linguist >= 4.3.3-3
 BuildRequires:	qt4-qmake >= 4.3.3-3
